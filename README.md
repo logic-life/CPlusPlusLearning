@@ -52,4 +52,4 @@
 
 ---
 
-[数据结构与算法](./数据结构与算法/README.md)
+[数据结构与算法](https://github.com/logic-life/CPlusPlusLearning/数据结构与算法/README.md)
