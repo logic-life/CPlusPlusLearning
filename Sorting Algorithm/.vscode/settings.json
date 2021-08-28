@@ -1,0 +1,22 @@
+{
+    "leek-fund.flash-news": true,
+    "editor.formatOnPaste": true,
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "deque": "cpp",
+        "ranges": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "istream": "cpp",
+        "type_traits": "cpp",
+        "random": "cpp"
+    }
+}

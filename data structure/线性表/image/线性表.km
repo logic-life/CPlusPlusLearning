@@ -1,0 +1,169 @@
+{
+    "root": {
+        "data": {
+            "id": "cdd44zcjkpc0",
+            "created": 1628322460106,
+            "text": "线性表",
+            "expandState": "expand",
+            "background": "#e5b8b7"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cdd45hx863s0",
+                    "created": 1628322500539,
+                    "text": "顺序存储",
+                    "layout_mind_offset": {
+                        "x": -33,
+                        "y": -132
+                    },
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdd46739qhs0",
+                            "created": 1628322555324,
+                            "text": "顺序表",
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cdd5nc5fgf40",
+                                    "created": 1628326719640,
+                                    "text": "静态分配"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdd5nmx6tuo0",
+                                    "created": 1628326743086,
+                                    "text": "动态扩展"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cdd5p11i3bk0",
+                            "created": 1628326852185,
+                            "text": "优点：随机访问特性，查找O(1)时间，存储密度高；逻辑上相邻的元素，物理上也相邻"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cdd5pzrs4yg0",
+                            "created": 1628326927785,
+                            "text": "缺点：插入删除需移动大量元素"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cdd45rxjg940",
+                    "created": 1628322522326,
+                    "text": "链式存储",
+                    "layout_mind_offset": {
+                        "x": 399,
+                        "y": 138
+                    },
+                    "layout_right_offset": {
+                        "x": -82,
+                        "y": 0
+                    },
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdd49mfxrmw0",
+                            "created": 1628322823834,
+                            "text": "借助指针实现",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cdd46i6br1k0",
+                                    "created": 1628322579453,
+                                    "text": "单链表",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdd46ikz2ig0",
+                                    "created": 1628322580339,
+                                    "text": "双链表",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdd46nfi7rk0",
+                                    "created": 1628322590892,
+                                    "text": "循环链表",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cdd4a3ucv080",
+                            "created": 1628322861711,
+                            "text": "借助数组实现",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cdd46q21fww0",
+                                    "created": 1628322596609,
+                                    "text": "静态链表",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cdd5tmfev2o0",
+                            "created": 1628327212196,
+                            "text": "优点;允许存储空间不连续，插入删除时不需要移动大量的元素，只需要修改指针即可"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cdd5ubnm1ns0",
+                            "created": 1628327267111,
+                            "text": "缺点：查找某个元素时需要从头遍历整个链表"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "snow-compact",
+    "version": "1.4.43"
+}
