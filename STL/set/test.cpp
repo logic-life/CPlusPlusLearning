@@ -5,6 +5,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     int i_a[] = {0, 1, 3, 4, 5};
+    i_a[2] = 8;
     set<int> iset(i_a, i_a + 5);
     //max_size()返回集合中最多元素数量
     cout << "max_size:" << iset.max_size() << endl;
@@ -22,25 +23,25 @@ int main(int argc, char *argv[])
     //也可以指定位置插入
     iset.insert(iset.end(), 2);
 
-
     //查找元素
     auto iter = iset.find(4);
-    if(iter!=iset.end())
+    if (iter != iset.end())
         cout << "3 found" << endl;
     //set中不允许通过迭代器更改set中的元素
+    // assignment of read-only location 'iter.std::_Rb_tree_const_iterator<int>::operator*()'
     //*iter = 9;错误！！！
-
     //删除一个具体元素
     iset.erase(7);
     //删除set中第一个元素
     iset.erase(iset.begin());
     //删除set中指定迭代器范围的元素
     iset.erase(iset.begin(), iset.end());
-    cout<<"size:"<<iset.size() << endl;
+    cout << "size:" << iset.size() << endl;
     iset.insert(arr, arr + 3);
     cout << "size:" << iset.size() << endl;
     //清空iset
     iset.clear();
     cout << "size:" << iset.size() << endl;
+
     return 0;
 }
