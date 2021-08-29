@@ -8,6 +8,10 @@ int main(int argc, char *argv[])
 {
     int pos = 0;
     vector<int> i_v(2, 9);
+    // 支持迭代器赋值
+    *i_v.begin() = 4;
+    // 支持
+    i_v[1] = 7;
     //读取向量空间中的元素个数
     cout << "size=" << i_v.size() << endl;
     //读取向量空间中的空间大小
@@ -20,8 +24,8 @@ int main(int argc, char *argv[])
     //stl中的查找成功找到就返回最先找到元素的迭代器，否则返回end()
     vector<int>::iterator iter = find(i_v.begin(), i_v.end(), 9);
     if (iter != i_v.end())
-        //删除指定迭代器位置的元素
-        i_v.erase(iter);
+        //删除指定迭代器位置的元素，并返回删除元素的下一个元素的迭代器，如果不存在则返回end()
+        cout << "删除的元素下一个元素为：" << *i_v.erase(iter) << endl;
     cout << "size=" << i_v.size() << endl;
     cout << "max_size" << i_v.max_size() << endl;
     cout << "capacity:" << i_v.capacity() << endl;
@@ -35,7 +39,7 @@ int main(int argc, char *argv[])
     // void insert(iterator loc, size_type num, const TYPE &val);
     // void insert(iterator loc, input_iterator start, input_iterator end);
     // 三种使用方法insert()
-    i_v.insert(i_v.end(), 8); 
+    i_v.insert(i_v.end(), 8);
     //逆序迭代器，从队尾输出到队头
     for (auto i = i_v.rbegin(); i != i_v.rend(); i++)
         cout << *i << " ";
